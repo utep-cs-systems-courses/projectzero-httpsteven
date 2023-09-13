@@ -20,14 +20,18 @@ int main()
       puts("You selected triangle:");
       print_triangle(5, 7);
       break;
+    case 'a':
+      puts("You selected Arrow:");
+      print_arrow();
+      break;
     case 's':
       puts("You selected square:");
       print_square(5, 5);
       break;
     case 'c':
       puts("You selected chars:");
-      for (char c = 'A'; c < 'D'; c++)
-	print_char_11x16(c);
+      for (char c = 'A'; c <= 'Z'; c++)
+	print_char_5x7(c);
       break;
     case 'q':
       puts("Bye!");
